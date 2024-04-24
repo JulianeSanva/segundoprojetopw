@@ -1,0 +1,41 @@
+body{
+    padding: 2rem;
+    background: #84b7f2;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#lista-de-tarefas{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+
+}
+
+.apagando{
+    animation: fadeout 1s;
+}
+
+@keyframes fadeout{
+    to {opacity: 0; }
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+       
+    p{
+        font-size: 3rem;
+        text-align: center;
+    }        
+}
+
+
